@@ -17,7 +17,7 @@ import androidx.compose.ui.graphics.compositeOver
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
-import com.praxis.feat.authentication.ui.theme.TweetifyTheme
+import com.mutualmobile.praxis.commonui.theme.TweetifyTheme
 import kotlin.math.ln
 
 /**

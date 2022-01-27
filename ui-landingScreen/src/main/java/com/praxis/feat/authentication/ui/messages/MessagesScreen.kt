@@ -14,12 +14,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.mutualmobile.praxis.commonui.theme.AlphaNearOpaque
 import com.praxis.feat.authentication.ui.components.ComposeTweetifyFeedText
 import com.praxis.feat.authentication.ui.components.TweetifySurface
 import com.praxis.feat.authentication.ui.home.feeds.ComposeNameHandlerOverflow
 import com.praxis.feat.authentication.ui.home.feeds.ComposeTime
 import com.praxis.feat.authentication.ui.home.stories.RoundedUserImage
-import com.praxis.feat.authentication.ui.theme.AlphaNearOpaque
 
 @Composable
 fun MessagesScreen(

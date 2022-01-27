@@ -21,8 +21,8 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.rememberImagePainter
+import com.mutualmobile.praxis.commonui.theme.TweetifyTheme
 import com.praxis.feat.authentication.ui.components.TweetifySurface
-import com.praxis.feat.authentication.ui.theme.TweetifyTheme
 import com.praxis.feat.authentication.ui.utils.PHOTO_URL
 
 @Composable

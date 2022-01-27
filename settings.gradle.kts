@@ -2,7 +2,6 @@
 include(":app")
 
 // Feature modules
-include(":ui-jokes")
 include(":ui-landingScreen")
 include(":ui-githubrepos")
 

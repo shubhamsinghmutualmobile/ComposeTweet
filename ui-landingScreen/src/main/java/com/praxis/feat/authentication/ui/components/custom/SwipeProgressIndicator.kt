@@ -13,9 +13,9 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import com.google.accompanist.swiperefresh.SwipeRefreshState
+import com.mutualmobile.praxis.commonui.theme.TweetifyTheme
 import com.praxis.feat.authentication.R
 import com.praxis.feat.authentication.ui.components.TweetifySurface
-import com.praxis.feat.authentication.ui.theme.TweetifyTheme
 
 @Composable
 fun SwipeProgressIndicator(

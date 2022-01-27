@@ -12,17 +12,18 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
+import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.google.accompanist.insets.navigationBarsPadding
 import com.google.accompanist.insets.statusBarsPadding
+import com.mutualmobile.praxis.commonui.theme.TweetifyTheme
 import com.praxis.feat.authentication.ui.home.bottomnavigation.TweetifyHomeBottomAppBar
 import com.praxis.feat.authentication.ui.home.drawer.TweetifyHomeDrawer
-import com.praxis.feat.authentication.ui.theme.TweetifyTheme
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
 @Composable
-fun TweetifyScaffold() {
+fun TweetifyScaffold(navigatorFragment: NavController) {
     val navController = rememberNavController()
     val scaffoldState = rememberScaffoldState(rememberDrawerState(DrawerValue.Closed))
     val (shouldShowAppBar, updateAppBarVisibility) = remember { mutableStateOf(true) }
@@ -74,7 +75,8 @@ fun TweetifyScaffold() {
             padding,
             shouldShowAppBar = updateAppBarVisibility,
             navAction = navActions,
-            shouldShowSearchBar = updateSearchBarVisibility
+            shouldShowSearchBar = updateSearchBarVisibility,
+            navigatorFragment = navigatorFragment
         )
     }
 }

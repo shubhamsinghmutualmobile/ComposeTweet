@@ -3,7 +3,7 @@ package com.mutualmobile.praxis.commonui.theme
 import androidx.compose.ui.graphics.Color
 
 val White = Color(0xffffffff)
-val PraxisColor = Color(0xff00ACEE)
+val TwitterColor = Color(0xff00ACEE)
 
 val VeryLightGrey = Color(0xffdadce0)
 val LightGrey = Color(0xffe8eaed)

@@ -1,5 +1,6 @@
 package com.praxis.feat.authentication.ui.home
 
+import android.os.Bundle
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Spacer
@@ -11,8 +12,12 @@ import androidx.compose.material.Divider
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.google.accompanist.swiperefresh.SwipeRefresh
 import com.google.accompanist.swiperefresh.rememberSwipeRefreshState
+import com.mutualmobile.praxis.commonui.theme.AlphaNearTransparent
+import com.mutualmobile.praxis.commonui.theme.TweetifyTheme
+import com.praxis.feat.authentication.R
 import com.praxis.feat.authentication.ui.components.TweetifySurface
 import com.praxis.feat.authentication.ui.components.custom.SwipeProgressIndicator
 import com.praxis.feat.authentication.ui.home.feeds.ComposeTweet
@@ -22,8 +27,6 @@ import com.praxis.feat.authentication.ui.home.feeds.data.TweetState
 import com.praxis.feat.authentication.ui.home.feeds.data.TweetsViewModel
 import com.praxis.feat.authentication.ui.home.stories.ComposeStoriesHome
 import com.praxis.feat.authentication.ui.home.stories.UserStoriesRepository
-import com.praxis.feat.authentication.ui.theme.AlphaNearTransparent
-import com.praxis.feat.authentication.ui.theme.TweetifyTheme
 import timber.log.Timber
 
 @Composable
@@ -31,7 +34,8 @@ fun HomeScreen(
     navigateToTweet: (String) -> Unit?,
     modifierPadding: PaddingValues,
     navigateToHashTagSearch: (String) -> Unit?,
-    tweetsViewModel: TweetsViewModel
+    tweetsViewModel: TweetsViewModel,
+    navigatorFragment: NavController
 ) {
     val tweetState = tweetsViewModel.tweetsState
     val swipeRefreshState = rememberSwipeRefreshState(tweetState is TweetState.Loading)
@@ -71,7 +75,13 @@ fun HomeScreen(
                                     tweet = it,
                                     onClickTweet =
                                     { tweet ->
-                                        navigateToTweet(tweet.tUid)
+                                        val bundle = Bundle()
+                                        bundle.putString("tweetId", tweet.tUid)
+                                        navigatorFragment.navigate(
+                                            R.id.repo_details_fragment,
+                                            bundle
+                                        )
+//                                        navigateToTweet(tweet.tUid)
                                     },
                                     hashTagNavigator = { hashTag ->
                                         navigateToHashTagSearch.invoke(hashTag)

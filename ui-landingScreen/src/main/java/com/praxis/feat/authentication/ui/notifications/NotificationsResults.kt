@@ -19,12 +19,12 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberImagePainter
+import com.mutualmobile.praxis.commonui.theme.AlphaNearOpaque
+import com.mutualmobile.praxis.commonui.theme.FunctionalRed
+import com.mutualmobile.praxis.commonui.theme.FunctionalRedDark
+import com.mutualmobile.praxis.commonui.theme.TweetifyTheme
 import com.praxis.feat.authentication.R
 import com.praxis.feat.authentication.ui.components.TweetifySurface
-import com.praxis.feat.authentication.ui.theme.AlphaNearOpaque
-import com.praxis.feat.authentication.ui.theme.FunctionalRed
-import com.praxis.feat.authentication.ui.theme.FunctionalRedDark
-import com.praxis.feat.authentication.ui.theme.TweetifyTheme
 
 @Composable
 fun NotificationsResults(notificationVM: NotificationsViewModel) {

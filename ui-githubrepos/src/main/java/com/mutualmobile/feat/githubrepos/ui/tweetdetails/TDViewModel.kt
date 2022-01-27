@@ -1,4 +1,4 @@
-package com.praxis.feat.authentication.ui.home.feeds.tweetdetails
+package com.mutualmobile.feat.githubrepos.ui.tweetdetails
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf

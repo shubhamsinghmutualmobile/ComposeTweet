@@ -9,10 +9,10 @@ import androidx.compose.ui.platform.ViewCompositionStrategy.DisposeOnViewTreeLif
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.google.accompanist.insets.ProvideWindowInsets
+import com.mutualmobile.praxis.commonui.theme.TweetifyTheme
 import com.mutualmobile.praxis.navigator.ComposeNavigator
 import com.mutualmobile.praxis.navigator.FragmentNavGraphNavigator
 import com.praxis.feat.authentication.ui.home.TweetifyScaffold
-import com.praxis.feat.authentication.ui.theme.TweetifyTheme
 import com.praxis.feat.authentication.ui.utils.SystemUiController
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
@@ -50,7 +50,7 @@ class LandingScreenFragment : Fragment() {
                  * by finding the NavController and navigating to the destination:
                  */
                 ProvideWindowInsets {
-                    TweetifyScaffold()
+                    TweetifyScaffold(findNavController())
                 }
             }
         }

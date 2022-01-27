@@ -20,10 +20,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberImagePainter
+import com.mutualmobile.praxis.commonui.theme.AlphaNearOpaque
+import com.mutualmobile.praxis.commonui.theme.AlphaNearTransparent
+import com.mutualmobile.praxis.commonui.theme.TweetifyTheme
 import com.praxis.feat.authentication.R
-import com.praxis.feat.authentication.ui.theme.AlphaNearOpaque
-import com.praxis.feat.authentication.ui.theme.AlphaNearTransparent
-import com.praxis.feat.authentication.ui.theme.TweetifyTheme
 
 @Composable
 fun SearchResults(searchVM: SearchTabViewModel) {

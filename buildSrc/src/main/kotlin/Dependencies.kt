@@ -19,7 +19,7 @@ object BuildPlugins {
     const val KOTLIN_PARCELABLE_PLUGIN = "kotlin-parcelize"
     const val KOTLIN_KAPT = "kotlin-kapt"
     const val DAGGER_HILT = "dagger.hilt.android.plugin"
-    const val SAFE_ARGS_KOTLIN = "androidx.navigation.safeargs.kotlin"
+    const val SAFE_ARGS_KOTLIN = "androidx.navigation.safeargs"
 }
 
 object Lib {
@@ -48,7 +48,7 @@ object Lib {
 
         const val APP_COMPAT = "androidx.appcompat:appcompat:1.3.0-beta01"
         const val NAVIGATION_FRAGMENT =
-            "androidx.navigation:navigation-fragment-ktx:$FRAGMENT_NAVIGATION_VERSION"
+            "androidx.navigation:navigation-fragment:$FRAGMENT_NAVIGATION_VERSION"
         const val FRAGMENT_KTX = "androidx.fragment:fragment-ktx:1.4.0"
 
         // Compose
@@ -71,7 +71,8 @@ object Lib {
         const val ACCOMPANIST_SWIPE_REFRESH =
             "com.google.accompanist:accompanist-swiperefresh:$ACCOMPANIST_VERSION"
         const val JSOUP = "org.jsoup:jsoup:$JSOUP_VERSION"
-        const val CONSTRAINT_LAYOUT = "androidx.constraintlayout:constraintlayout-compose:$CONSTRAINT_LAYOUT_VERSION"
+        const val CONSTRAINT_LAYOUT =
+            "androidx.constraintlayout:constraintlayout-compose:$CONSTRAINT_LAYOUT_VERSION"
     }
 
     object Di {

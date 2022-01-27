@@ -16,8 +16,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.mutualmobile.praxis.commonui.theme.TweetifyTheme
 import com.praxis.feat.authentication.ui.components.TweetifySurface
-import com.praxis.feat.authentication.ui.theme.TweetifyTheme
 
 @Composable
 fun ComposeTweetAdvertisementBanner() {

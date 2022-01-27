@@ -13,7 +13,7 @@ import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.TextLayoutResult
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.style.TextDecoration
-import com.praxis.feat.authentication.ui.theme.TweetifyTheme
+import com.mutualmobile.praxis.commonui.theme.TweetifyTheme
 import java.util.regex.Pattern
 
 const val HASH_TAG = "HASH"

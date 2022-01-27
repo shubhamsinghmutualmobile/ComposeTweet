@@ -30,13 +30,13 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.constraintlayout.compose.ConstraintLayout
 import coil.compose.rememberImagePainter
+import com.mutualmobile.praxis.commonui.theme.AlphaNearOpaque
+import com.mutualmobile.praxis.commonui.theme.TweetifyTheme
 import com.praxis.feat.authentication.R
 import com.praxis.feat.authentication.ui.components.ComposeTweetifyFeedText
 import com.praxis.feat.authentication.ui.components.TweetifySurface
 import com.praxis.feat.authentication.ui.home.feeds.data.Tweet
 import com.praxis.feat.authentication.ui.home.stories.RoundedUserImage
-import com.praxis.feat.authentication.ui.theme.AlphaNearOpaque
-import com.praxis.feat.authentication.ui.theme.TweetifyTheme
 
 @Composable
 fun ComposeTweet(

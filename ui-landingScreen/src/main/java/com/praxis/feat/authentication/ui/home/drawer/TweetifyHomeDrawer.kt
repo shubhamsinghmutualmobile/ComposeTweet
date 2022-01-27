@@ -11,9 +11,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.mutualmobile.praxis.commonui.theme.AlphaNearOpaque
+import com.mutualmobile.praxis.commonui.theme.TweetifyTheme
 import com.praxis.feat.authentication.ui.components.TweetifySurface
-import com.praxis.feat.authentication.ui.theme.AlphaNearOpaque
-import com.praxis.feat.authentication.ui.theme.TweetifyTheme
 
 @Composable
 fun TweetifyHomeDrawer() {

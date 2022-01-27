@@ -1,4 +1,4 @@
-package com.praxis.feat.authentication.ui.home.feeds.tweetdetails
+package com.mutualmobile.feat.githubrepos.ui.tweetdetails
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.padding
@@ -13,11 +13,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.google.accompanist.insets.navigationBarsPadding
+import com.google.accompanist.insets.statusBarsPadding
+import com.mutualmobile.praxis.commonui.theme.TweetifyTheme
 import com.praxis.feat.authentication.ui.components.TweetifySurface
 import com.praxis.feat.authentication.ui.home.feeds.ComposeTweet
 import com.praxis.feat.authentication.ui.home.feeds.data.Tweet
 import com.praxis.feat.authentication.ui.home.feeds.data.TweetState
-import com.praxis.feat.authentication.ui.theme.TweetifyTheme
 
 @Composable
 fun TwitterDetailsScreen(
@@ -30,6 +31,7 @@ fun TwitterDetailsScreen(
     val tweetState = tweetViewModel.tweetByIdState
     Scaffold(
         modifier = Modifier
+            .statusBarsPadding()
             .navigationBarsPadding(),
         topBar = { TwitterDetailsTopBar(onBack) },
         backgroundColor = TweetifyTheme.colors.uiBackground,

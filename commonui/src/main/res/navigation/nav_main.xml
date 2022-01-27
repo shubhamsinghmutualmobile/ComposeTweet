@@ -11,19 +11,8 @@
         android:label="AuthFragment">
 
         <action
-            android:id="@+id/action_authFragment_to_viewPagerFragment"
-            app:destination="@+id/view_pager_fragment" />
-
-    </fragment>
-
-    <fragment
-        android:id="@+id/view_pager_fragment"
-        android:name="com.mutualmobile.praxis.root.PraxisViewPagerFragment"
-        tools:layout="@layout/fragment_view_pager">
-
-        <action
-            android:id="@+id/action_reposFragment_to_repoDetailsFragment"
-            app:destination="@+id/repo_details_fragment" />
+            android:id="@+id/action_landingScreen_fragment_to_repo_details_fragment"
+            app:destination="@id/repo_details_fragment" />
 
     </fragment>
 
@@ -31,9 +20,10 @@
         android:id="@+id/repo_details_fragment"
         android:name="com.mutualmobile.feat.githubrepos.ui.github.repodetails.RepoDetailsFragment">
         <argument
-            android:name="uiRepoModel"
-            app:argType="com.mutualmobile.feat.githubrepos.ui.model.UIRepo"
-            app:nullable="true" />
+            android:name="tweetId"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
     </fragment>
 
 
