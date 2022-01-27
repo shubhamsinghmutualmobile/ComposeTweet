@@ -19,7 +19,10 @@ android {
     buildTypes {
         getByName("release") {
             isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
 
@@ -34,7 +37,7 @@ android {
         resources.excludes.add("META-INF/LICENSE.txt")
         resources.excludes.add("META-INF/NOTICE.txt")
         resources.excludes.add("LICENSE.txt")
-        resources.excludes.add( "/META-INF/{AL2.0,LGPL2.1}")
+        resources.excludes.add("/META-INF/{AL2.0,LGPL2.1}")
     }
 
     compileOptions {
@@ -45,7 +48,6 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-
 }
 
 // Required for annotation processing plugins like Dagger
@@ -74,6 +76,9 @@ dependencies {
     api(Lib.Kotlin.KTX_CORE)
 
     api(Lib.Android.ACCOMPANIST_INSETS)
+    api(Lib.Android.ACCOMPANIST_SWIPE_REFRESH)
+    api(Lib.Android.JSOUP)
+    api(Lib.Android.CONSTRAINT_LAYOUT)
 
     /*DI*/
     api(Lib.Di.hilt)
