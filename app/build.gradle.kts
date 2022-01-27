@@ -65,8 +65,8 @@ kapt {
 }
 
 dependencies {
-    implementation(project(":ui-githubrepos"))
 
+    implementation(project(":ui-tweetDetails"))
     implementation(project(":navigator"))
     implementation(project(":data"))
     implementation(project(":domain"))

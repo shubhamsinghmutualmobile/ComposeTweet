@@ -3,7 +3,7 @@ include(":app")
 
 // Feature modules
 include(":ui-landingScreen")
-include(":ui-githubrepos")
+include(":ui-tweetDetails")
 
 // Other modules
 include(":domain")
