@@ -3,7 +3,7 @@ include(":app")
 
 // Feature modules
 include(":ui-jokes")
-include(":ui-authentication")
+include(":ui-landingScreen")
 include(":ui-githubrepos")
 
 // Other modules
